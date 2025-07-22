@@ -2,6 +2,8 @@
 
 A Tuition Management Application for users Admin, Teacher/Lecturer, Student.
 
+LinkedIn post link - https://www.linkedin.com/posts/damian-kenny-3a1a6534b_androiddevelopment-firebase-mobileappdevelopment-activity-7351810516014485504-XlM2?utm_source=share&utm_medium=member_ios&rcm=ACoAAFTExsgBxRUn757kbkaJCHrStwylC3h8tQ4
+
 This application was made for my Mobile Application Development Coursework at my University.
 The application is made for 3 users Admin, Teacher and Student, it is made for convenience for universities specially when it comes for student attendance which takes quite a while to properly check.
 
