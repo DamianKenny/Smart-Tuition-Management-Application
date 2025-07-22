@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/background_dark">
+
+
+        <!-- Date and Status Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date: 2024-01-15"
+                android:textSize="16sp"
+                android:textColor="@color/colorOnSurface"
+                android:fontFamily="@font/robotslab" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present"
+                android:textSize="14sp"
+                android:textColor="@color/success"
+                android:fontFamily="@font/robotslab"
+                android:background="@drawable/status_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp" />
+        </LinearLayout>
+
+        <!-- Subject -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject: Mathematics"
+            android:textSize="14sp"
+            android:textColor="@color/colorOnSurface"
+            android:fontFamily="@font/robotslab"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Teacher -->
+        <TextView
+            android:id="@+id/extraText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher: John Doe"
+            android:textSize="12sp"
+            android:textColor="@color/colorOnSurface"
+            android:fontFamily="@font/robotslab" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

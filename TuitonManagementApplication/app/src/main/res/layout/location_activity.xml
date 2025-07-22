@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".tuition_centers">
+
+    <!-- Main Scroll Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Menu Button -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menuButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuition Centers"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/robotslab"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- ===== Institute Colombo ===== -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Institute Colombo"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#303F9F"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address: 123 Galle Road, Colombo"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: +94 11 2345678"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Courses: Engineering, Software Development"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/colomboMap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Show in Maps"
+                            android:onClick="goToColombo"
+                            android:textColor="#1976D2"
+                            android:textSize="16sp"
+                            android:drawableEnd="@drawable/ic_arrow"
+                            android:drawablePadding="4dp"
+                            android:paddingVertical="4dp"
+                            android:clickable="true"
+                            android:focusable="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===== Institute Kandy ===== -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Institute Kandy"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#303F9F"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address: 45 Peradeniya Road, Kandy"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: +94 81 3456789"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Courses: Diploma Programs, IT Certifications"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/kandyMap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Show in Maps"
+                            android:onClick="goToKandy"
+                            android:textColor="#1976D2"
+                            android:textSize="16sp"
+                            android:drawableEnd="@drawable/ic_arrow"
+                            android:drawablePadding="4dp"
+                            android:paddingVertical="4dp"
+                            android:clickable="true"
+                            android:focusable="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===== Institute Galle ===== -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Institute Galle"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#303F9F"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address: 78 Church Street, Galle Fort"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: +94 91 4567890"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Courses: HNDSE, Computer Science Degrees"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/galleMap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Show in Maps"
+                            android:onClick="goToGalle"
+                            android:textColor="#1976D2"
+                            android:textSize="16sp"
+                            android:drawableEnd="@drawable/ic_arrow"
+                            android:drawablePadding="4dp"
+                            android:paddingVertical="4dp"
+                            android:clickable="true"
+                            android:focusable="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1a1a1a"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ffffff"
+        app:itemIconTint="#ffffff"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tuiton Management Application</string>
+    <string-array name="user_types">
+        <item>Select User Type</item>
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+</resources>

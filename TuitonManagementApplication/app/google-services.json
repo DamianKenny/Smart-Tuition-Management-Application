@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "170291417138",
+    "project_id": "tuition-management-application",
+    "storage_bucket": "tuition-management-application.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170291417138:android:ffc364222f26648eb9ec2b",
+        "android_client_info": {
+          "package_name": "com.nibm.tuitonmanagementapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_phxMIRer1v5UljY-dWPC-bkSQKiw7Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

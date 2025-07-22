@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Outer border -->
+    <path
+        android:pathData="M10,10 L230,10 L230,230 L10,230 Z"
+        android:strokeWidth="4"
+        android:strokeColor="#000000"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- Inner dashed guide -->
+    <path
+        android:pathData="M40,40 L200,40 L200,200 L40,200 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#666666"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Top-left corner finder pattern -->
+    <path
+        android:pathData="M15,15 L50,15 L50,50 L15,50 Z"
+        android:strokeWidth="3"
+        android:strokeColor="#000000"
+        android:fillColor="@android:color/transparent" />
+
+    <path
+        android:pathData="M20,20 L45,20 L45,45 L20,45 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#000000"
+        android:fillColor="@android:color/transparent" />
+
+    <path
+        android:pathData="M27,27 L38,27 L38,38 L27,38 Z"
+        android:fillColor="#000000" />
+
+    <!-- Top-right corner finder pattern -->
+    <path
+        android:pathData="M190,15 L225,15 L225,50 L190,50 Z"
+        android:strokeWidth="3"
+        android:strokeColor="#000000"
+        android:fillColor="@android:color/transparent" />
+
+    <path
+        android:pathData="M195,20 L220,20 L220,45 L195,45 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#000000"
+        android:fillColor="@android:color/transparent" />
+
+    <path
+        android:pathData="M202,27 L213,27 L213,38 L202,38 Z"
+        android:fillColor="#000000" />
+
+    <!-- Bottom-left corner finder pattern -->
+    <path
+        android:pathData="M15,190 L50,190 L50,225 L15,225 Z"
+        android:strokeWidth="3"
+        android:strokeColor="#000000"
+        android:fillColor="@android:color/transparent" />
+
+    <path
+        android:pathData="M20,195 L45,195 L45,220 L20,220 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#000000"
+        android:fillColor="@android:color/transparent" />
+
+    <path
+        android:pathData="M27,202 L38,202 L38,213 L27,213 Z"
+        android:fillColor="#000000" />
+
+    <!-- Timing patterns / alignment markers -->
+    <!-- Left side marker -->
+    <path
+        android:pathData="M5,115 L12,115 L12,125 L5,125 Z"
+        android:fillColor="#000000" />
+
+    <!-- Right side marker -->
+    <path
+        android:pathData="M228,115 L235,115 L235,125 L228,125 Z"
+        android:fillColor="#000000" />
+
+    <!-- Top marker -->
+    <path
+        android:pathData="M115,5 L125,5 L125,12 L115,12 Z"
+        android:fillColor="#000000" />
+
+    <!-- Bottom marker -->
+    <path
+        android:pathData="M115,228 L125,228 L125,235 L115,235 Z"
+        android:fillColor="#000000" />
+
+
+
+</vector>

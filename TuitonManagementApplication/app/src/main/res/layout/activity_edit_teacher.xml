@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/background_dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menuButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu" />
+
+            <!-- Full Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                app:boxBackgroundColor="#2D3748"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:hintTextColor="#A0AEC0"
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="#A0AEC0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:fontFamily="@font/robotslab" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxBackgroundColor="#2D3748"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:hintTextColor="#A0AEC0"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="#A0AEC0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:fontFamily="@font/robotslab" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Phone -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxBackgroundColor="#2D3748"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:hintTextColor="#A0AEC0"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="#A0AEC0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:fontFamily="@font/robotslab" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Subject -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxBackgroundColor="#2D3748"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:hintTextColor="#A0AEC0"
+                app:startIconDrawable="@drawable/ic_book"
+                app:startIconTint="#A0AEC0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Subject"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:fontFamily="@font/robotslab" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Qualification -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxBackgroundColor="#2D3748"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:hintTextColor="#A0AEC0"
+                app:startIconDrawable="@drawable/ic_school"
+                app:startIconTint="#A0AEC0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etQualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Qualification"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:fontFamily="@font/robotslab" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Experience -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:boxBackgroundColor="#2D3748"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:hintTextColor="#A0AEC0"
+                app:startIconDrawable="@drawable/ic_work"
+                app:startIconTint="#A0AEC0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Experience"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:fontFamily="@font/robotslab" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Teacher"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/robotslab"
+                android:padding="16dp"
+                android:elevation="4dp" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1a1a1a"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ffffff"
+        app:itemIconTint="#ffffff" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

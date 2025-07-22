@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#121212"
+    android:padding="24dp"
+    tools:context=".upload_course_material">
+
+    <LinearLayout
+        android:id="@+id/materialContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Menu Icon -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menuButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Menu"
+            android:src="@drawable/ic_menu" />
+
+        <!-- Header -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#2E7D32"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload and Manage Materials"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/robotslab" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload PDFs, slides or any learning resources for your course."
+                    android:textSize="14sp"
+                    android:textColor="#E0E0E0"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/robotslab" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Course Spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select course:"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/robotslab" />
+
+        <Spinner
+            android:id="@+id/spinnerCourse"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:popupBackground="@color/white"
+            />
+
+        <!-- Material title -->
+        <EditText
+            android:id="@+id/editMaterialTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter material title"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/black"
+            android:textColorHint="#AAAAAA"
+            android:fontFamily="@font/robotslab" />
+
+        <!-- File Path and Browse -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editFilePath"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="No file selected"
+                android:focusable="false"
+                android:clickable="false"
+                android:background="@android:drawable/edit_text"
+                android:textColor="@color/black"
+                android:textColorHint="#AAAAAA"
+                android:padding="10dp"
+                android:fontFamily="@font/robotslab" />
+
+            <Button
+                android:id="@+id/btnBrowseFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse"
+                android:drawableStart="@drawable/upload"
+                android:backgroundTint="#14a8fa"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Browse File" />
+        </LinearLayout>
+
+        <!-- Upload Button -->
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Material"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#000000"
+            android:fontFamily="@font/robotslab"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Uploaded Materials Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uploaded Materials"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/robotslab"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Sample uploaded material card (hidden template) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sampleCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#1E1E1E"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+
+                    android:contentDescription="Material Icon"
+                    app:tint="#BB86FC" />
+
+                <TextView
+                    android:id="@+id/materialTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Sample Material Title"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="12dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/robotslab" />
+
+                <ImageButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/edit"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Edit"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/delete"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Delete"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#2D3748"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Full Name -->
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/robotslab"/>
+
+        <!-- Email and Phone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email"
+                android:textColor="#A0AEC0"
+                android:textSize="14sp"
+                android:fontFamily="@font/robotslab"/>
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone"
+                android:textColor="#A0AEC0"
+                android:textSize="14sp"
+                android:fontFamily="@font/robotslab"/>
+        </LinearLayout>
+
+        <!-- Subject -->
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Subject"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="@font/robotslab"/>
+
+        <!-- Qualification -->
+        <TextView
+            android:id="@+id/tvQualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Qualification"
+            android:textColor="#A0AEC0"
+            android:textSize="14sp"
+            android:fontFamily="@font/robotslab"/>
+
+        <!-- Experience -->
+        <TextView
+            android:id="@+id/tvExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Experience"
+            android:textColor="#A0AEC0"
+            android:textSize="14sp"
+            android:fontFamily="@font/robotslab"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

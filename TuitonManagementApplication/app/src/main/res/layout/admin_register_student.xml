@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Menu Button -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/menuButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="Menu"
+                    android:src="@drawable/ic_menu" />
+
+                <!-- Header Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="#8B5CF6"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Register New Student"
+                            android:fontFamily="@font/robotslab"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Add a new student to the system"
+                            android:fontFamily="@font/robotslab"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Full Name Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="#2D3748"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxStrokeColor="#4A5568"
+                    app:hintTextColor="#A0AEC0"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="#A0AEC0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:fontFamily="@font/robotslab"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Email Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="#2D3748"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxStrokeColor="#4A5568"
+                    app:hintTextColor="#A0AEC0"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="#A0AEC0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:fontFamily="@font/robotslab"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#A0AEC0" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Email Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="#2D3748"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxStrokeColor="#4A5568"
+                    app:hintTextColor="#A0AEC0"
+                    app:startIconDrawable="@drawable/ic_module"
+                    app:startIconTint="#A0AEC0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etModule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Module"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:fontFamily="@font/robotslab"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#A0AEC0" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Email Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="#2D3748"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxStrokeColor="#4A5568"
+                    app:hintTextColor="#A0AEC0"
+                    app:startIconDrawable="@drawable/ic_batch"
+                    app:startIconTint="#A0AEC0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etBatch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Batch"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:fontFamily="@font/robotslab"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#A0AEC0" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:boxBackgroundColor="#2D3748"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxStrokeColor="#4A5568"
+                    app:hintTextColor="#A0AEC0"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#A0AEC0"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="#A0AEC0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/robotslab"
+                        android:inputType="textPassword"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#A0AEC0" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Register Button -->
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_orange_gradient"
+                    android:fontFamily="@font/robotslab"
+                    android:elevation="4dp"
+                    android:text="Register Student"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1a1a1a"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ffffff"
+        app:itemIconTint="#ffffff" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

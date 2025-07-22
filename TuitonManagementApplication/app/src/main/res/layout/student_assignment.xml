@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/background_dark">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Menu Button -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menuButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Assign Students"
+                android:fontFamily="@font/robotslab"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp" />
+
+        </LinearLayout>
+
+        <!-- Assignment Form -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Student Selection Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/card_background"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="12dp">
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="24dp"
+                                android:background="@color/orange_primary" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select Student"
+                                android:fontFamily="@font/robotslab"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_marginStart="12dp" />
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/spinnerStudents"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/spinner_background"
+                            android:fontFamily="@font/robotslab"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Teacher Selection Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/card_background"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="12dp">
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="24dp"
+                                android:background="@color/purple_primary" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Assign Teacher"
+                                android:fontFamily="@font/robotslab"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_marginStart="12dp" />
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/spinnerTeachers"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/spinner_background"
+                            android:fontFamily="@font/robotslab"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Course Selection Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/card_background"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="12dp">
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="24dp"
+                                android:background="@color/blue_primary" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select Course"
+                                android:fontFamily="@font/robotslab"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_marginStart="12dp" />
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/spinnerCourses"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/spinner_background"
+                            android:fontFamily="@font/robotslab"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Assign Button -->
+                <Button
+                    android:id="@+id/btnAssignStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="Assign Student"
+                    android:fontFamily="@font/robotslab"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_gradient"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1a1a1a"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ffffff"
+        app:itemIconTint="#ffffff" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

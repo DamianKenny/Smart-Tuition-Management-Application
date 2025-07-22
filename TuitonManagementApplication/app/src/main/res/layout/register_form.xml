@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:padding="70px"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="40px"
+        android:layout_marginTop="70px"
+        android:fontFamily="@font/robotslab"
+        android:text="Hello,"
+        android:textSize="90px"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="-70px"
+        android:text="Sign Up!"
+        android:fontFamily="@font/robotslab"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="85px" />
+
+    <!-- User Type Dropdown -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:layout_marginBottom="10px"
+        android:fontFamily="@font/robotslab"
+        android:text="Select Role:"
+        android:textSize="50px"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/userTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:fontFamily="@font/robotslab"
+        android:background="@android:drawable/btn_dropdown"
+        android:backgroundTint="@color/white"
+        android:padding="15px"/>
+
+    <!-- Name Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:fontFamily="@font/robotslab"
+            android:hint="Full Name"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:fontFamily="@font/robotslab"
+            android:hint="Email"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="40px"
+        android:layout_marginTop="40px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Password"
+            android:fontFamily="@font/robotslab"
+            android:hint="Password"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Register"
+        android:fontFamily="@font/robotslab"
+        android:layout_marginTop="60px"
+        android:text="Register"
+        android:textSize="50px"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="50px"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:fontFamily="@font/robotslab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginnow"
+        android:text="Click to Login"/>
+
+</LinearLayout>

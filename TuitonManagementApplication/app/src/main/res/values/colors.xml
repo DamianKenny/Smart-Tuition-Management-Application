@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_dark">#E5561F</color>
+    <color name="primary_light">#FF8A5B</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#FFD23F</color>
+    <color name="secondary_dark">#E6BD2A</color>
+    <color name="secondary_light">#FFE066</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#FFF9F5</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_card">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_hint">#BDC3C7</color>
+
+    <!-- Status Colors -->
+    <color name="success">#27AE60</color>
+    <color name="error">#E74C3C</color>
+    <color name="warning">#F39C12</color>
+    <color name="info">#3498DB</color>
+
+    <!-- Card Background Gradients -->
+    <color name="card_students_start">#FF6B35</color>
+    <color name="card_students_end">#FF8A5B</color>
+
+    <color name="card_teachers_start">#9B59B6</color>
+    <color name="card_teachers_end">#BB77D1</color>
+
+    <color name="card_assignments_start">#3498DB</color>
+    <color name="card_assignments_end">#5DADE2</color>
+
+    <color name="card_reports_start">#1ABC9C</color>
+    <color name="card_reports_end">#48C9B0</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#FF6B35</color>
+    <color name="button_secondary">#7F8C8D</color>
+    <color name="button_disabled">#BDC3C7</color>
+    <color name="background_dark">#2D2D2D</color>
+
+    <color name="colorPrimary">#90CAF9</color>
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorSurface">#121212</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorBackground">#000000</color>
+
+
+    <color name="colorPrimary2">#FF6B35</color>
+    <color name="colorPrimaryDark">#E55A2B</color>
+    <color name="colorAccent">#8B5CF6</color>
+
+    <color name="background_dark2">#1A202C</color>
+    <color name="surface_dark">#2D3748</color>
+    <color name="text_primary2">#FFFFFF</color>
+    <color name="text_secondary2">#A0AEC0</color>
+    <color name="text_hint2">#718096</color>
+
+    <color name="orange_start">#FF6B35</color>
+    <color name="orange_end">#F56565</color>
+    <color name="orange_gradient">#FF6B35</color>
+
+    <color name="purple_start">#8B5CF6</color>
+    <color name="purple_end">#EC4899</color>
+    <color name="purple_gradient">#8B5CF6</color>
+
+    <color name="blue_start">#3182CE</color>
+    <color name="blue_end">#4299E1</color>
+
+    <color name="red_start">#E53E3E</color>
+    <color name="red_end">#F56565</color>
+
+    <color name="transparent2">#00000000</color>
+
+    <color name="card_background">#3C3C3C</color>
+    <color name="orange_primary">#FF6B35</color>
+    <color name="purple_primary">#8E44AD</color>
+    <color name="blue_primary">#3498DB</color>
+    <color name="green_primary">#27AE60</color>
+</resources>

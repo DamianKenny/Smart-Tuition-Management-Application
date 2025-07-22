@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_dark">
+
+    <!-- Menu Icon -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/menuButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="Menu"
+        android:src="@drawable/ic_menu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Results"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Header CardView block -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#0288D1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Release Student Results"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/robotslab" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit final results of a student to the system."
+                android:textSize="14sp"
+                android:textColor="#E0E0E0"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/robotslab" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Spinner
+        android:id="@+id/spinnerBatch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Student:"
+        android:textSize="16sp"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerStudent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="View Results"
+        android:textSize="18sp"
+        android:backgroundTint="#0288D1"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

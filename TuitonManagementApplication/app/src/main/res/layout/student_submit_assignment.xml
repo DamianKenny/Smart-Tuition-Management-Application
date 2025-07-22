@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_dark">
+
+    <!-- Menu Icon -->
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:src="@drawable/ic_menu"
+        android:contentDescription="Menu"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Header Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="#3949AB"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Assignment"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/robotslab" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload your completed assignment file."
+                android:textSize="14sp"
+                android:textColor="#E0E0E0"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/robotslab" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Course Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select course:"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/robotslab" />
+
+    <Spinner
+        android:id="@+id/spinnerCourse"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:popupBackground="#2A2A2A" />
+
+    <!-- Assignment Title Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select assignment:"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/robotslab" />
+
+    <Spinner
+        android:id="@+id/spinnerAssignment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:popupBackground="#2A2A2A" />
+
+    <!-- File selection row with EditText and Browse button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical">
+
+        <!-- File name display -->
+        <EditText
+            android:id="@+id/editFilePath"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="No file selected"
+            android:background="@android:drawable/edit_text"
+            android:focusable="false"
+            android:clickable="false"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:fontFamily="@font/robotslab"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Browse button with upload icon -->
+        <Button
+            android:id="@+id/btnChooseFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:backgroundTint="#14a8fa"
+            android:layout_marginStart="8dp"
+            android:padding="10dp"
+            android:drawableStart="@drawable/upload"
+            android:contentDescription="Browse File"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitAssignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Assignment"
+        android:backgroundTint="#525eab"
+        android:textColor="#000000"
+        android:fontFamily="@font/robotslab" />
+</LinearLayout>

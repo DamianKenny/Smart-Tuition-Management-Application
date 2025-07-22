@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#121212">
+
+
+    <!-- Menu Icon -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/menuButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="Menu"
+        android:src="@drawable/ic_menu" />
+
+    <!-- Header CardView block -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#0288D1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Release Student Results"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/robotslab" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit final results of a student to the system."
+                android:textSize="14sp"
+                android:textColor="#E0E0E0"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/robotslab" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Batch label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select student's batch:"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/robotslab" />
+
+    <Spinner
+        android:id="@+id/spinnerBatch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:popupBackground="@color/white" />
+
+    <!-- Index label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select student:"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/robotslab" />
+
+    <Spinner
+        android:id="@+id/spinnerIndex"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:popupBackground="@color/white" />
+
+
+    <EditText
+        android:id="@+id/editResult"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Result (e.g., A, B, 85%)"
+        android:layout_marginBottom="26dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/black"
+        android:textColorHint="#AAAAAA"
+        android:fontFamily="@font/robotslab"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-3dp"/>
+
+    <Button
+        android:id="@+id/btnRelease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Result"
+        android:textStyle="bold"
+        android:backgroundTint="#14a8fa"
+        android:textColor="#000000"
+        android:fontFamily="@font/robotslab" />
+</LinearLayout>

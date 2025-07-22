@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nibm.tuitonmanagementapplication">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:mimeType="application/pdf" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TuitonManagementApplication"
+        tools:targetApi="31">
+
+        <activity
+                android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StudentManager"/>
+        <activity android:name=".ManageTeachersActivity"/>
+        <activity android:name=".RegisterTeacherActivity"/>
+        <activity android:name=".TeacherManager"/>
+        <activity android:name=".StudentAssignmentActivity"/>
+        <activity android:name=".AssignmentListActivity"/>
+        <activity android:name=".QRCodeActivity"/>
+        <activity android:name=".StudentDashboardActivity"/>
+        <activity android:name=".StudentAttendanceActivity"/>
+        <activity android:name="Assignment_upload_teacher"/>
+        <activity android:name=".Student_Dashboard"/>
+        <activity android:name="Teacher_Dashboard"/>
+        <activity android:name=".Teacher_upload_results"/>
+        <activity android:name=".upload_course_material"/>
+        <activity android:name=".PdfViewerActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Student_assignment_upload"/>
+        <activity android:name=".Student_assignment_view"/>
+        <activity android:name=".CourseMaterialsActivity"/>
+        <activity android:name=".Student_result_view"/>
+        <activity android:name=".tuition_centers"/>
+
+
+        <activity
+            android:name=".EditTeacherActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name=".RegisterStudentActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ManageStudentsActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- zxing capture activity -->
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/zxing_CaptureTheme"
+            tools:replace="android:screenOrientation" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+
+    </application>
+
+
+
+</manifest>

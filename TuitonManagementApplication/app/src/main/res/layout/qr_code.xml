@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/background_dark">
+
+    <!-- Menu Button -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/menuButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="Menu"
+        android:src="@drawable/ic_menu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Marker"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/robotslab"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/qr_code"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="QR Code Scanner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan student QR codes to mark attendance"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/robotslab"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Student QR Code"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="@font/robotslab"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/camera"
+        android:drawablePadding="8dp" />
+
+    <TextView
+        android:id="@+id/tv_last_scanned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Scanned: None"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/success"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_view_reports"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View Reports"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/robotslab"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_student_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Student Login"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/robotslab"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students must show their unique QR codes from their mobile app"
+        android:fontFamily="@font/robotslab"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+</LinearLayout>
